@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2023-11-10T23:49:53.442Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36   " etag="9ycX-NYUrwhTJfvJTB25" version="22.1.0" type="github">
+  <diagram name="Page-1" id="GTk2f--OJwK8omcSUbVB">
+    <mxGraphModel dx="880" dy="560" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="udW6B_OUbTVnXxlXb3MD-2" value="LOJA&lt;br&gt;&lt;br&gt;nome: string&lt;br&gt;endereco: string&lt;br&gt;lucro_Mensal: float" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="121" y="120" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="udW6B_OUbTVnXxlXb3MD-3" value="PRODUTO&lt;br&gt;nome: string&lt;br&gt;preco: float&lt;br&gt;data_validade: Data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="120" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="udW6B_OUbTVnXxlXb3MD-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.017;entryY=0.65;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="udW6B_OUbTVnXxlXb3MD-2" target="udW6B_OUbTVnXxlXb3MD-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="udW6B_OUbTVnXxlXb3MD-5" value="Tem" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="udW6B_OUbTVnXxlXb3MD-4">
+          <mxGeometry x="0.0438" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="udW6B_OUbTVnXxlXb3MD-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="udW6B_OUbTVnXxlXb3MD-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="639" y="160" as="sourcePoint" />
+            <mxPoint x="550" y="170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="639" y="161" />
+              <mxPoint x="590" y="161" />
+              <mxPoint x="590" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="udW6B_OUbTVnXxlXb3MD-9" value="Compra&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="udW6B_OUbTVnXxlXb3MD-7">
+          <mxGeometry x="-0.0615" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="udW6B_OUbTVnXxlXb3MD-6" value="CLIENTE&lt;br&gt;nome: string&lt;br&gt;filiado: boolean&lt;br&gt;quantidade_item: int" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="130" width="140" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
