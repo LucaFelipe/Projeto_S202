@@ -16,3 +16,9 @@ class Produto:
                 return "Erro ao criar o produto"
         else:
             return "Loja não existe!"
+        
+    def verify(self, nome):
+        query = "MATCH(p:Produto{nome:$nome}) RETURN p.name as name"
+        parameters = {"nome":nome}
+        results = self.database.execute_query(query, parameters)
+        return results

@@ -3,7 +3,10 @@ from neo4j import GraphDatabase, basic_auth
 class Database:
 
     def __init__(self):
-        self.driver = GraphDatabase.driver("bolt://3.222.117.209:7687", auth=basic_auth("neo4j", "bundles-teeth-winding"))
+        try:
+            self.driver = GraphDatabase.driver("bolt://52.90.34.23:7687", auth=basic_auth("neo4j", "miner-inches-departure"))
+        except:
+            print("Erro ao conectar com o bd!")
 
     def close(self):
         self.driver.close()
