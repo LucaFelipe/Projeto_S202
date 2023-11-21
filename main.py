@@ -41,6 +41,7 @@ class Main:
             print("3 - Atualizar loja")
             print("4 - Excluir loja pelo nome")
             print("5 - Voltar")
+            print("Outra opcao - Sair")
             opcao = input()
             match opcao:
                 case "1":
@@ -77,12 +78,14 @@ class Main:
             print("3 - Atualizar produto")
             print("4 - Excluir produto pelo nome")
             print("5 - Voltar")
+            print("Outra opcao - Sair")
             opcao = input()
             match opcao:
                 case "1":
                     nome = input("Nome do produto: ")
                     preco = input("Preco: ")
                     data_validade = datetime.datetime.now()
+                    data_validade = data_validade.strftime("%x")
                     nome_loja = input("Nome da loja correspondente: ")
                     print(p.create(nome, preco, data_validade, nome_loja))
                 case "2":
@@ -111,6 +114,7 @@ class Main:
             print("3 - Atualizar cliente")
             print("4 - Excluir cliente pelo nome")
             print("5 - Voltar")
+            print("Outra opcao - Sair")
             opcao = input()
             match opcao:
                 case "1":
