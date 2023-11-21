@@ -24,10 +24,10 @@ class Produto:
         except:
             return "Erro ao ler o produto."
         
-    def update(self, nome, novo_nome, novo_preco, nova_data_validade):
+    def update(self, nome, novo_nome, novo_preco):
         try:
-            query = "MATCH (p:Produto {nome: $nome}) SET p.nome = $novo_nome, p.preco = $novo_preco, p.data_validade = $nova_data_validade"
-            parameters = {"nome": nome, "novo_nome":novo_nome, "novo_preco": novo_preco, "nova_data_validade": nova_data_validade}
+            query = "MATCH (p:Produto {nome: $nome}) SET p.nome = $novo_nome, p.preco = $novo_preco"
+            parameters = {"nome": nome, "novo_nome":novo_nome, "novo_preco": novo_preco}
             self.database.execute_query(query, parameters)
             return "Produto atualizado!"
         except:

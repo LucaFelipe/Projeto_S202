@@ -29,7 +29,7 @@ class Main:
                 case "3":
                     self.op_clientes()
                 case _:
-                    aux = False
+                    exit()
                     
     def op_loja(self):
         aux = True
@@ -47,10 +47,25 @@ class Main:
                     nome = input("Nome da loja: ")
                     endereco = input("Endereco da loja: ")
                     lucro_mensal = int(input("Lucro mensal: "))
-                    l = Loja(self.db)
-                    print(l.create(nome, endereco, lucro_mensal))
+                    num_func = int(input("Numero de funcionarios: "))
+                    print(l.create(nome, endereco, lucro_mensal, num_func))
+                case "2":
+                    nome = input("Nome da loja: ")
+                    print(l.read(nome))
+                case "3":
+                    nome = input("Nome atual da loja: ")
+                    novo_nome = input("Nome novo da loja: ")
+                    novo_lucro = input("Novo lucro mensal: ")
+                    novo_end = input("Novo endereço: ")
+                    novo_nfunc = input("Novo numero de funcionarios: ")
+                    print(l.update(nome, novo_nome, novo_end, novo_lucro, novo_nfunc))
+                case "4":
+                    nome = input("Nome da loja: ")
+                    print(l.delete(nome))
+                case "5":
+                    self.do_crud()
                 case _:
-                    aux = False
+                    exit()
     
     def op_produto(self):
         aux = True
@@ -69,10 +84,22 @@ class Main:
                     preco = input("Preco: ")
                     data_validade = datetime.datetime.now()
                     nome_loja = input("Nome da loja correspondente: ")
-                    p = Produto(self.db)
                     print(p.create(nome, preco, data_validade, nome_loja))
+                case "2":
+                    nome = input("Nome do produto: ")
+                    print(p.read(nome))
+                case "3":
+                    nome = input("Nome atual do produto: ")
+                    novo_nome = input("Novo nome: ")
+                    novo_preco = input("Novo preço: ")
+                    print(p.update(nome, novo_nome, novo_preco))
+                case "4":
+                    nome = input("Nome do produto: ")
+                    print(p.delete(nome))
+                case "5":
+                    self.do_crud()
                 case _:
-                    aux = False
+                    exit()
     
     def op_clientes(self):
         aux = True
@@ -104,7 +131,7 @@ class Main:
                 case "5":
                     self.do_crud()
                 case _:
-                    aux = False
+                    exit()
                     
             
 main_instance = Main()
