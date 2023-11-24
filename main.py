@@ -118,10 +118,14 @@ class Main:
             opcao = input()
             match opcao:
                 case "1":
+                    itens = []
                     nome = input("Nome do cliente: ")
-                    item = input("Nome do item adquirido: ")
-                    quantidade = input("Quantidade de itens: ")
-                    print(c.create(nome, quantidade, item))
+                    qt = int(input("Quantos itens foram adquiridos? "))
+                    for i in range(qt):
+                        item_aux = input(f"Nome do item {i+1}: ")
+                        itens.append(item_aux)
+                        quantidade = input(f"Quantidade de itens comprados de {item_aux}: ")
+                    print(c.create(nome, quantidade, itens))
                 case "2":
                     nome = input("Nome do cliente: ")
                     print(c.read(nome))
