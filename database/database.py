@@ -4,7 +4,7 @@ class Database:
 
     def __init__(self):
         try:
-            self.driver = GraphDatabase.driver("bolt://35.170.182.196:7687", auth=basic_auth("neo4j", "envelope-winding-segment"))
+            self.driver = GraphDatabase.driver("bolt://3.87.8.34:7687", auth=basic_auth("neo4j", "wools-claims-hazards"))
         except:
             print("Erro ao conectar com o bd!")
 
