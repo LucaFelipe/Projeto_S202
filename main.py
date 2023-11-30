@@ -19,8 +19,7 @@ def exibir_menu():
     print("12 - Deletar loja")
     print("0 - Sair")
     print("================")
-
-<<<<<<< HEAD
+    
 def criar_produto(produto):
     nome = input("Informe o nome do produto: ")
     preco = float(input("Informe o preço do produto: "))
@@ -138,7 +137,7 @@ while True:
         deletar_loja(loja)
     else:
         print("Opção inválida. Por favor, escolha novamente.")
-=======
+        
 class Main:
     def __init__(self):
         self.db = Database()
@@ -276,4 +275,3 @@ class Main:
                     
             
 main_instance = Main()
->>>>>>> de62e5344c9bc1f508e6333f8cc0e34bff8946dd
